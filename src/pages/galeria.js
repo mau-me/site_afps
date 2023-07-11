@@ -1,18 +1,21 @@
 import React from "react";
 import Layout from "../layouts";
-import { Typography, Container } from "@mui/material";
+import { Container, Typography, useMediaQuery, useTheme } from "@mui/material";
 
-const GaleriaPage = () => {
+const Galeria = () => {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
     <Layout>
       <Container>
-        <Typography variant="h1" component="h1">
+        <Typography variant={isSmallScreen ? "h3" : "h1"}>
           Galeria de Fotos
         </Typography>
-        {/* Conteúdo adicional da página de galeria de fotos aqui */}
+        {/* Restante do conteúdo */}
       </Container>
     </Layout>
   );
 };
 
-export default GaleriaPage;
+export default Galeria;

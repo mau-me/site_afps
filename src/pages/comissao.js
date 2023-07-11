@@ -1,18 +1,19 @@
 import React from "react";
 import Layout from "../layouts";
-import { Typography, Container } from "@mui/material";
+import { Container, Typography, useMediaQuery, useTheme } from "@mui/material";
 
-const ComissaoPage = () => {
+const Comissao = () => {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
     <Layout>
       <Container>
-        <Typography variant="h1" component="h1">
-          Comissão
-        </Typography>
-        {/* Conteúdo adicional da página de comissão aqui */}
+        <Typography variant={isSmallScreen ? "h3" : "h1"}>Comissão</Typography>
+        {/* Restante do conteúdo */}
       </Container>
     </Layout>
   );
 };
 
-export default ComissaoPage;
+export default Comissao;
