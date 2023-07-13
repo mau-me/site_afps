@@ -7,17 +7,18 @@ const GalleryCarousel = () => {
     {
       src: require("../../images/Carousel/img01.jpeg").default,
       alt: "Image 1",
-      caption: "Legenda da Imagem 1",
     },
     {
       src: require("../../images/Carousel/img02.jpeg").default,
       alt: "Image 2",
-      caption: "Legenda da Imagem 2",
     },
     {
       src: require("../../images/Carousel/img03.jpeg").default,
       alt: "Image 3",
-      caption: "Legenda da Imagem 3",
+    },
+    {
+      src: require("../../images/Carousel/img04.jpeg").default,
+      alt: "Image 4",
     },
   ];
 
