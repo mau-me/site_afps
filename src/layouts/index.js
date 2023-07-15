@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import { CssBaseline, createTheme, ThemeProvider } from "@mui/material";
 
 const theme = createTheme({
@@ -19,7 +20,7 @@ const Layout = ({ children }) => {
       <CssBaseline />
       <Header />
       <main>{children}</main>
-      {/* Conteúdo do rodapé aqui */}
+      <Footer />
     </ThemeProvider>
   );
 };
