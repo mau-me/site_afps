@@ -1,0 +1,40 @@
+/* Estilos para o header */
+.header-container {
+  background-color: #145068;
+  color: #fff;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between; /* Distribui os elementos horizontalmente */
+  align-items: center; /* Centralizar verticalmente */
+  z-index: 1;
+}
+
+/* Estilo para o título */
+.header-title {
+  font-family: "Arial", sans-serif; /* Fonte bonita e formal */
+  font-size: 24px; /* Tamanho da fonte */
+  margin: 0; /* Remover margem padrão do título */
+}
+
+/* Estilos para a navegação (links) */
+.nav-links {
+  display: flex;
+}
+
+/* Estilo dos links */
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  margin-left: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+/* Estilo dos links ao passar o mouse */
+.nav-links a:hover {
+  background-color: #555;
+}
